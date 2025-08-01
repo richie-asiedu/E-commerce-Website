@@ -22,8 +22,8 @@ A modern e-commerce website built with React, TypeScript, Vite, and Tailwind CSS
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/e-commerce-website.git
-cd e-commerce-website
+git clone https://github.com/richie-asiedu/E-commerce-Website.git
+cd E-commerce-Website
 ```
 
 2. Install dependencies:
@@ -49,9 +49,9 @@ npm run dev
 
 This project is configured to automatically deploy to GitHub Pages. The deployment process:
 
-1. **Automatic Deployment**: Every push to the `main` branch triggers an automatic build and deployment
+1. **Automatic Deployment**: Every push to the `master` branch triggers an automatic build and deployment
 2. **GitHub Actions**: Uses GitHub Actions workflow to build and deploy the site
-3. **Live Site**: Your site will be available at `https://yourusername.github.io/e-commerce-website/`
+3. **Live Site**: Your site will be available at `https://richie-asiedu.github.io/E-commerce-Website/`
 
 ### Manual Deployment Steps
 
