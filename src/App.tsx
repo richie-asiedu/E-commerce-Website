@@ -4,10 +4,9 @@ import Home from '@/pages/Home/Home'
 import Details from '@/pages/Details/Details'
 import Categories from '@/pages/Categories/Categories'
 import Cart from '@/pages/Cart/Cart'
-import Payment from '@/pages/Payment/Payment'
 import Newsletter from '@/components/Newsletter/Newsletter'
 import Footer from '@/components/Footer/Footer'
-
+import Profile from '@/pages/Profile/Profile'
 
 function App() {
 
@@ -20,7 +19,7 @@ function App() {
           <Route path="/details/:id" element={<Details />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/payment" element={<Payment />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
         <Newsletter />
         <Footer />
