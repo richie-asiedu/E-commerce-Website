@@ -9,12 +9,14 @@ This guide will help you deploy your e-commerce website to GitHub Pages.
 
 ## Step 1: Enable GitHub Pages
 
-1. Go to your GitHub repository
+1. Go to your GitHub repository: `https://github.com/richie-asiedu/E-commerce-Website`
 2. Click on "Settings" tab
 3. Scroll down to "Pages" in the left sidebar
 4. Under "Source", select "Deploy from a branch"
 5. Choose "gh-pages" branch
 6. Click "Save"
+
+**Important**: If you see "404 - There isn't a GitHub Pages site here", this means GitHub Pages hasn't been enabled yet. Follow the steps above to enable it.
 
 ## Step 2: Configure Repository Settings
 
@@ -23,17 +25,15 @@ This guide will help you deploy your e-commerce website to GitHub Pages.
 3. Check "Allow GitHub Actions to create and approve pull requests"
 4. Click "Save"
 
-## Step 3: Update Homepage URL
+## Step 3: Verify Homepage URL
 
-Before deploying, update the homepage URL in `package.json`:
+The homepage URL in `package.json` should match your repository:
 
 ```json
 {
-  "homepage": "https://yourusername.github.io/e-commerce-website"
+  "homepage": "https://richie-asiedu.github.io/E-commerce-Website"
 }
 ```
-
-Replace `yourusername` with your actual GitHub username.
 
 ## Step 4: Deploy
 
@@ -51,11 +51,11 @@ npm run deploy
 
 ### Option B: Automatic Deployment (Recommended)
 
-1. Push your changes to the main branch:
+1. Push your changes to the master branch:
 ```bash
 git add .
 git commit -m "Update website"
-git push origin main
+git push origin master
 ```
 
 2. The GitHub Actions workflow will automatically:
@@ -65,17 +65,27 @@ git push origin main
 
 ## Step 5: Verify Deployment
 
-1. Wait a few minutes for the deployment to complete
-2. Visit your website at: `https://yourusername.github.io/e-commerce-website`
-3. Check that all features are working correctly
+1. Wait 2-5 minutes for the deployment to complete
+2. Check the "Actions" tab in your repository to see if the workflow completed successfully
+3. Visit your website at: `https://richie-asiedu.github.io/E-commerce-Website`
+4. Check that all features are working correctly
 
 ## Troubleshooting
 
 ### Common Issues
 
-1. **404 Error**: Make sure the base path in `vite.config.ts` matches your repository name
-2. **Assets not loading**: Verify that the `base` path is correctly set
-3. **Build fails**: Check the GitHub Actions logs for specific error messages
+1. **404 Error**: 
+   - Make sure GitHub Pages is enabled in repository settings
+   - Verify the source is set to "gh-pages" branch
+   - Check that the workflow completed successfully in the Actions tab
+
+2. **Images not loading**: 
+   - Make sure the base path in `vite.config.ts` matches your repository name
+   - Verify that the `base` path is correctly set to `/E-commerce-Website/`
+
+3. **Build fails**: 
+   - Check the GitHub Actions logs for specific error messages
+   - Verify all dependencies are properly installed
 
 ### Manual Fixes
 

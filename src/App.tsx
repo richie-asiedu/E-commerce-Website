@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from '@/components/Navbar/Navbar'
 import Home from '@/pages/Home/Home'
 import Details from '@/pages/Details/Details'
@@ -8,9 +8,7 @@ import Payment from '@/pages/Payment/Payment'
 import Newsletter from '@/components/Newsletter/Newsletter'
 import Footer from '@/components/Footer/Footer'
 
-
 function App() {
-
   return (
     <>
     <Navbar />
@@ -21,6 +19,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/payment" element={<Payment />} />
+          {/* Catch all route - redirect to home page */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Newsletter />
         <Footer />
