@@ -1,4 +1,3 @@
-import React from 'react'
 import './HeroSection.css'
 import HeroPic from '@/assets/HeroPic.png'
 import Kite from '@/assets/kite.png'

@@ -5,8 +5,8 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/E-commerce-Website/',
   plugins: [react(), tailwindcss()],
+  base: process.env.NODE_ENV === 'production' ? '/e-commerce-website/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
