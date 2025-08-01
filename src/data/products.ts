@@ -1,19 +1,3 @@
-import AL1 from '@/assets/AL 1.png';
-import AL2 from '@/assets/AL 2.png';
-import AL3 from '@/assets/AL 3.png';
-import AL4 from '@/assets/AL 4.png';
-import jeans from '@/assets/jeans.png';
-import tLong from '@/assets/t-long.png';
-import t2 from '@/assets/t-2.png';
-import tLong2 from '@/assets/t-long 2.png';
-import oT from '@/assets/o-t.png';
-import sJeans from '@/assets/s-jeans.png';
-import DI1 from '@/assets/DI 1.png';
-import DI2 from '@/assets/DI 2.png';
-import DI3 from '@/assets/DI 3.png';
-import tShirt from '@/assets/t-shirt.png';
-import lJeans from '@/assets/l-jeans.png';
-
 export const products = [
   {
     id: 1,
@@ -26,7 +10,7 @@ export const products = [
     description: 'A stylish gradient t-shirt for casual wear.',
     colors: ['#F35528', '#F16F54', '#FAA356'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: [AL2],
+    images: ['/src/assets/AL 2.png'],
   },
   {
     id: 2,
@@ -39,7 +23,7 @@ export const products = [
     description: 'Classic polo with tipping details.',
     colors: ['#2FCB6F', '#5386E4'],
     sizes: ['Medium', 'Large'],
-    images: [AL3],
+    images: ['/src/assets/AL 3.png'],
   },
   {
     id: 3,
@@ -52,7 +36,7 @@ export const products = [
     description: 'Black striped t-shirt for a bold look.',
     colors: ['#242424', '#fff'],
     sizes: ['Small', 'Large'],
-    images: [AL4],
+    images: ['/src/assets/AL 4.png'],
   },
   {
     id: 4,
@@ -65,7 +49,7 @@ export const products = [
     description: 'Skinny fit jeans for everyday comfort.',
     colors: ['#5386E4', '#FAA356'],
     sizes: ['Medium', 'Large', 'X-Large'],
-    images: [jeans],
+    images: ['/src/assets/jeans.png'],
   },
   {
     id: 5,
@@ -78,7 +62,7 @@ export const products = [
     description: 'Checkered shirt for a smart casual look.',
     colors: ['#F35528', '#F16F54'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: [tLong],
+    images: ['/src/assets/t-long.png'],
   },
   {
     id: 6,
@@ -91,7 +75,7 @@ export const products = [
     description: 'Sleeve striped t-shirt for a trendy style.',
     colors: ['#FAA356', '#2FCB6F'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: [t2],
+    images: ['/src/assets/t-2.png'],
   },
   {
     id: 7,
@@ -104,7 +88,7 @@ export const products = [
     description: 'Vertical striped shirt for a modern look.',
     colors: ['#314F4A', '#FAA356'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: [tLong2],
+    images: ['/src/assets/t-long 2.png'],
   },
   {
     id: 8,
@@ -117,7 +101,7 @@ export const products = [
     description: 'Courage graphic t-shirt for bold statements.',
     colors: ['#F35528', '#F16F54'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: [oT],
+    images: ['/src/assets/o-t.png'],
   },
   {
     id: 9,
@@ -128,9 +112,9 @@ export const products = [
     description: 'Loose fit Bermuda shorts for relaxed summer style.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: [sJeans],
+    images: ['/src/assets/s-jeans.png'],
   },
-  {
+    {
     id: 10,
     name: 'ONE LIFE GRAPHIC T-SHIRT',
     price: 260,
@@ -142,7 +126,11 @@ export const products = [
       "This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable fabric, it offers superior comfort and style.",
     colors: ['#4F4631', '#314F4A', '#31344F'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: [DI1, DI2, DI3],
+    images: [
+      '/src/assets/DI 1.png',
+      '/src/assets/DI 2.png',
+      '/src/assets/DI 3.png',
+    ],
   },
   {
     id: 11,
@@ -153,7 +141,7 @@ export const products = [
     description: 'T-shirt with tape details for a trendy look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: [tShirt],
+    images: ['/src/assets/t-shirt.png'],
   },
   {
     id: 12,
@@ -164,7 +152,7 @@ export const products = [
     description: 'Faded skinny jeans for a stylish look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: [lJeans],
+    images: ['/src/assets/l-jeans.png'],
   },
   {
     id: 13,
@@ -177,6 +165,6 @@ export const products = [
     description: 'Polo shirt with contrast trims for a stylish look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: [AL1],
+    images: ['/src/assets/AL 1.png'],
   },
 ];

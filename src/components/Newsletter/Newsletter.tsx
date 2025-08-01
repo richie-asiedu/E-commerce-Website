@@ -1,3 +1,4 @@
+import React from 'react'
 import './Newsletter.css'
 import evo from '@/assets/evo.png'
 const Newsletter = () => (

@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from 'react'
 import './Testimonials.css'
-import { useRef } from 'react'
-import { ChevronLeft, ChevronRight, Star, CheckCircle2 } from 'lucide-react'
+import { Star, CheckCircle2, ArrowLeft, ArrowRight } from 'lucide-react'
 
 const testimonials = [
   { name: 'Sarah M.', text: "The best online store! Great styles and quality.I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations." },
@@ -13,8 +13,18 @@ const testimonials = [
   { name: 'Priya N.', text: 'I love the unique styles and the fit is perfect every time.' },
 ]
 
+function useIsMobile(breakpoint = 700) {
+  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint)
+  useEffect(() => {
+    const onResize = () => setIsMobile(window.innerWidth <= breakpoint)
+    window.addEventListener('resize', onResize)
+    return () => window.removeEventListener('resize', onResize)
+  }, [breakpoint])
+  return isMobile
+}
+
 const Testimonials = () => {
-  const listRef = useRef<HTMLDivElement>(null);
+  const listRef = React.useRef<HTMLDivElement>(null);
   const CARD_WIDTH = 300 + 16;
 
   const scrollLeft = () => {
@@ -33,8 +43,8 @@ const Testimonials = () => {
       <div className="testimonials-header">
         <h2 className="testimonials-title">OUR HAPPY CUSTOMERS</h2>
         <div className="testimonials-arrows">
-          <button className="testimonial-arrow-btn" onClick={scrollLeft}><ChevronLeft size={28} /></button>
-          <button className="testimonial-arrow-btn" onClick={scrollRight}><ChevronRight size={28} /></button>
+          <button className="testimonial-arrow-btn" onClick={scrollLeft}><ArrowLeft size={28} /></button>
+          <button className="testimonial-arrow-btn" onClick={scrollRight}><ArrowRight size={28} /></button>
         </div>
       </div>
       <div
