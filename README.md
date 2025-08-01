@@ -1,15 +1,24 @@
 # E-commerce Website
 
-A modern e-commerce website built with React, TypeScript, Vite, and Tailwind CSS.
+A modern, responsive e-commerce website built with React, TypeScript, Vite, and Tailwind CSS.
 
 ## Features
 
-- Modern React with TypeScript
-- Responsive design with Tailwind CSS
-- Fast development with Vite
-- State management with Zustand
-- Smooth scrolling navigation
-- Beautiful UI components
+- 🛍️ Product catalog with filtering and search
+- 🎨 Modern, responsive design
+- ⚡ Fast performance with Vite
+- 📱 Mobile-first approach
+- 🎯 TypeScript for better development experience
+- 🎨 Tailwind CSS for styling
+
+## Tech Stack
+
+- **Frontend**: React 19, TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **State Management**: Zustand
+- **Routing**: React Router DOM
 
 ## Getting Started
 
@@ -22,8 +31,8 @@ A modern e-commerce website built with React, TypeScript, Vite, and Tailwind CSS
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/richie-asiedu/E-commerce-Website.git
-cd E-commerce-Website
+git clone https://github.com/yourusername/e-commerce-website.git
+cd e-commerce-website
 ```
 
 2. Install dependencies:
@@ -44,54 +53,55 @@ npm run dev
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
+- `npm run deploy` - Deploy to GitHub Pages
 
 ## Deployment
 
-This project is configured to automatically deploy to GitHub Pages. The deployment process:
+This project is configured for deployment to GitHub Pages. The deployment process is automated using GitHub Actions.
 
-1. **Automatic Deployment**: Every push to the `master` branch triggers an automatic build and deployment
-2. **GitHub Actions**: Uses GitHub Actions workflow to build and deploy the site
-3. **Live Site**: Your site will be available at `https://richie-asiedu.github.io/E-commerce-Website/`
-
-### Manual Deployment Steps
-
-If you need to deploy manually:
+### Manual Deployment
 
 1. Build the project:
 ```bash
 npm run build
 ```
 
-2. The built files will be in the `dist/` directory
-3. Deploy the contents of the `dist/` directory to your web server
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+### Automatic Deployment
+
+The project includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys the website to GitHub Pages whenever changes are pushed to the main branch.
+
+### GitHub Pages Setup
+
+1. Go to your repository settings on GitHub
+2. Navigate to "Pages" in the sidebar
+3. Set the source to "Deploy from a branch"
+4. Select the `gh-pages` branch
+5. Save the settings
+
+Your website will be available at: `https://yourusername.github.io/e-commerce-website`
 
 ## Project Structure
 
 ```
-├── src/                 # Source code
-├── public/             # Static assets
-├── dist/               # Build output (generated)
-├── .github/workflows/  # GitHub Actions workflows
-├── package.json        # Dependencies and scripts
-└── vite.config.ts      # Vite configuration
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── assets/        # Static assets (images, icons)
+├── data/          # Static data (products, etc.)
+└── App.tsx        # Main application component
 ```
-
-## Technologies Used
-
-- **React 19** - UI library
-- **TypeScript** - Type safety
-- **Vite** - Build tool and dev server
-- **Tailwind CSS** - Styling framework
-- **Zustand** - State management
-- **React Router** - Client-side routing
-- **Lucide React** - Icon library
 
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes
-4. Commit and push to the branch
+4. Commit and push to your branch
 5. Create a Pull Request
 
 ## License
