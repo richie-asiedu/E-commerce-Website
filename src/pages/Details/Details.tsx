@@ -79,12 +79,15 @@ const alsoLike = [
 
 import { useEffect } from 'react';
 import { useCartStore } from '@/store/cartStore';
+import { Link } from 'react-router-dom';
 
 const Details = () => {
   const { id } = useParams();
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [id]);
+
+  
   const product = products.find(p => p.id === Number(id));
   const [qty, setQty] = React.useState(1);
   const [mainImgIdx, setMainImgIdx] = React.useState(0);
@@ -302,9 +305,9 @@ const Details = () => {
         <h2 className="details-also-like-title">YOU MIGHT ALSO LIKE</h2>
         <div className="details-also-like-list">
           {alsoLike.map((p, i) => (
-            <a
+            <Link
               key={i}
-              href={`/details/${products.find(prod => prod.name === p.name)?.id || ''}`}
+              to={`/details/${products.find(prod => prod.name === p.name)?.id || ''}`}
               className="details-also-like-link"
               style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
             >
@@ -329,7 +332,7 @@ const Details = () => {
                 {p.oldPrice && <span className="details-also-like-old-price">${p.oldPrice}</span>}
                 {p.discount && <span className="details-also-like-discount">-{p.discount}%</span>}
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
