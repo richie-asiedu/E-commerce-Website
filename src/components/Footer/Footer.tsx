@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import twitterIcon from '@/assets/logo-twitter 2.png'
 import facebookIcon from '@/assets/fb.png'

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
 import './Testimonials.css'
+import { useRef } from 'react'
 import { Star, CheckCircle2, ArrowLeft, ArrowRight } from 'lucide-react'
 
 const testimonials = [
@@ -13,18 +13,8 @@ const testimonials = [
   { name: 'Priya N.', text: 'I love the unique styles and the fit is perfect every time.' },
 ]
 
-function useIsMobile(breakpoint = 700) {
-  const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint)
-  useEffect(() => {
-    const onResize = () => setIsMobile(window.innerWidth <= breakpoint)
-    window.addEventListener('resize', onResize)
-    return () => window.removeEventListener('resize', onResize)
-  }, [breakpoint])
-  return isMobile
-}
-
 const Testimonials = () => {
-  const listRef = React.useRef<HTMLDivElement>(null);
+  const listRef = useRef<HTMLDivElement>(null);
   const CARD_WIDTH = 300 + 16;
 
   const scrollLeft = () => {

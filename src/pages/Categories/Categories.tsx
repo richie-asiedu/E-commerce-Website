@@ -1,14 +1,12 @@
 import filter from '@/assets/D filter.png';
 import './Categories.css';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import arrowL from '@/assets/arrow L.png';
 import arrowR from '@/assets/arrow R.png';
 import { Link } from 'react-router-dom';
 import { products } from '@/data/products';
-type Props = {}
 
-
-const Categories = (props: Props) => {
+const Categories = () => {
 
   const [open, setOpen] = useState({
     categories: true,
