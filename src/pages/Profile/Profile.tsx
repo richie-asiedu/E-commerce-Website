@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Profile.css";
 
 
@@ -40,6 +40,9 @@ const Profile: React.FC = () => {
       setLoading(false);
     }, 700);
   };
+     useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
 
   return (
     <div className="profile-flip-bg">
