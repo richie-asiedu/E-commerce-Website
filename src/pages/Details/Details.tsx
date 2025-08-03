@@ -90,6 +90,9 @@ const Details = () => {
   
   const product = products.find(p => p.id === Number(id));
   const [qty, setQty] = React.useState(1);
+  React.useEffect(() => {
+    setQty(1);
+  }, [id]);
   const [mainImgIdx, setMainImgIdx] = React.useState(0);
   const [selectedSize, setSelectedSize] = React.useState(product?.sizes[0] || '');
   const [selectedColor, setSelectedColor] = React.useState(product?.colors[0] || '');
