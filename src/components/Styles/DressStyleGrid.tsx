@@ -1,3 +1,4 @@
+import React from 'react'
 import './DressStyleGrid.css'
 import CasualPic from '@/assets/CasualPic.png'
 import FormalPic from '@/assets/FormalPic.png'
