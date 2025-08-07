@@ -10,7 +10,9 @@ const testimonials = [
   { name: 'David R.', text: 'Great prices and a huge selection. I found everything I needed.' },
   { name: 'Linda S.', text: 'The quality of the clothes is top-notch. Will shop again!' },
   { name: 'Chris T.', text: 'Easy to use website and the products look even better in person.' },
-  { name: 'Priya N.', text: 'I love the unique styles and the fit is perfect every time.' },
+  { name: 'Priya N.', text: 'I love the unique styles and the fit is perfect every time.The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.' },
+  { name: 'Skippa C.', text: 'I love the unique styles and the fit is perfect every time.' },
+  { name: 'Get Paid.', text: 'I love the unique styles and the fit is perfect every time.The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.' },
 ]
 
 function useIsMobile(breakpoint = 700) {

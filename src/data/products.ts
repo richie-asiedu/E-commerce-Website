@@ -99,7 +99,7 @@ export const products = [
     rating: 4.0,
     reviews: 451,
     description: 'Courage graphic t-shirt for bold statements.',
-    colors: ['#F35528', '#F16F54'],
+    colors: ['#F16F54','#F35528'],
     sizes: ['Small', 'Medium', 'Large'],
     images: ['/src/assets/o-t.png'],
   },
