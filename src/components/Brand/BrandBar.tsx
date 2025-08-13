@@ -1,9 +1,9 @@
 import './BrandBar.css'
 import Vers from '@/assets/Vers.png'
-import Zara from '@/assets/zara.png'
+import Zara from '@/assets/Zara.png'
 import Gucci from '@/assets/Gucci.png'
 import Prada from '@/assets/Prada.png'
-import CalvinK from '@/assets/Calvin k.png'
+import CalvinK from '@/assets/Calvin K.png'
 
 const brands = [
   { src: Vers, alt: 'Versace' },
