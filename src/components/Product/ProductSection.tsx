@@ -27,7 +27,7 @@ const topSelling = [
 const ProductSection = ({ title, type }: { title: string, type: string }) => {
   const products = type === 'top' ? topSelling : newArrivals
   return (
-    <section className="product-section">
+    <section className="product-section" id="product-section">
       <h2 className="product-section-title">{title}</h2>
       <div className="product-section-product-list">
         {products.map((p, i) => (

@@ -78,8 +78,8 @@ const Navbar = () => {
             </div>
           )}
           <a href="#" className="navbar-link">On Sale</a>
-          <a href="#" className="navbar-link">New Arrivals</a>
-          <a href="#" className="navbar-link">Brands</a>
+          <a href="#product-section" className="navbar-link">New Arrivals</a>
+          <a href="#brand-bar-carousel" className="navbar-link" >Brands</a>
         </div>
         <div className="navbar-search-wrap">
           <div className="navbar-search">

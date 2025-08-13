@@ -14,7 +14,7 @@ const brands = [
 ]
 
 const BrandBar = () => (
-  <section className="brand-bar-carousel">
+  <section className="brand-bar-carousel" id="brand-bar-carousel">
     <div className="brand-bar-track">
       {[...brands, ...brands].map((brand, i) => (
         <img
