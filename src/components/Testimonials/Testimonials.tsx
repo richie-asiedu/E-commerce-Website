@@ -14,8 +14,7 @@ const testimonials = [
   { name: 'Skippa C.', text: 'I love the unique styles and the fit is perfect every time.' },
   { name: 'Get Paid.', text: 'I love the unique styles and the fit is perfect every time.The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.' },
 ]
-
-function useIsMobile(breakpoint = 700) {
+export const useIsMobile = function (breakpoint = 700) {
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= breakpoint)
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth <= breakpoint)
