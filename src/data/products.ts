@@ -1,3 +1,20 @@
+import AL1 from '@/assets/AL 1.png';
+import AL2 from '@/assets/AL 2.png';
+import AL3 from '@/assets/AL 3.png';
+import AL4 from '@/assets/AL 4.png';
+import Jeans from '@/assets/jeans.png';
+import TLONG from '@/assets/t-long.png';
+import TLONG2 from '@/assets/t-long 2.png';
+import T2 from '@/assets/t-2.png';
+import O_T from '@/assets/o-t.png';
+import S_JEANS from '@/assets/s-jeans.png';
+import DI1 from '@/assets/DI 1.png';
+import DI2 from '@/assets/DI 2.png';
+import DI3 from '@/assets/DI 3.png';
+import TSHIRT from '@/assets/t-shirt.png';
+import L_JEANS from '@/assets/l-jeans.png';
+
+
 export const products = [
   {
     id: 1,
@@ -10,7 +27,7 @@ export const products = [
     description: 'A stylish gradient t-shirt for casual wear.',
     colors: ['#F35528', '#F16F54', '#FAA356'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: ['/src/assets/AL 2.png'],
+    images: [AL2],
   },
   {
     id: 2,
@@ -23,7 +40,7 @@ export const products = [
     description: 'Classic polo with tipping details.',
     colors: ['#2FCB6F', '#5386E4'],
     sizes: ['Medium', 'Large'],
-    images: ['/src/assets/AL 3.png'],
+    images: [AL3],
   },
   {
     id: 3,
@@ -36,7 +53,7 @@ export const products = [
     description: 'Black striped t-shirt for a bold look.',
     colors: ['#242424', '#fff'],
     sizes: ['Small', 'Large'],
-    images: ['/src/assets/AL 4.png'],
+    images: [AL4],
   },
   {
     id: 4,
@@ -49,7 +66,7 @@ export const products = [
     description: 'Skinny fit jeans for everyday comfort.',
     colors: ['#5386E4', '#FAA356'],
     sizes: ['Medium', 'Large', 'X-Large'],
-    images: ['/src/assets/jeans.png'],
+    images: [Jeans],
   },
   {
     id: 5,
@@ -62,7 +79,7 @@ export const products = [
     description: 'Checkered shirt for a smart casual look.',
     colors: ['#F35528', '#F16F54'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: ['/src/assets/t-long.png'],
+    images: [TLONG],
   },
   {
     id: 6,
@@ -75,7 +92,7 @@ export const products = [
     description: 'Sleeve striped t-shirt for a trendy style.',
     colors: ['#FAA356', '#2FCB6F'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: ['/src/assets/t-2.png'],
+    images: [T2],
   },
   {
     id: 7,
@@ -88,7 +105,7 @@ export const products = [
     description: 'Vertical striped shirt for a modern look.',
     colors: ['#314F4A', '#FAA356'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: ['/src/assets/t-long 2.png'],
+    images: [TLONG2],
   },
   {
     id: 8,
@@ -101,7 +118,7 @@ export const products = [
     description: 'Courage graphic t-shirt for bold statements.',
     colors: ['#F16F54','#F35528'],
     sizes: ['Small', 'Medium', 'Large'],
-    images: ['/src/assets/o-t.png'],
+    images: [O_T],
   },
   {
     id: 9,
@@ -112,7 +129,7 @@ export const products = [
     description: 'Loose fit Bermuda shorts for relaxed summer style.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: ['/src/assets/s-jeans.png'],
+    images: [S_JEANS],
   },
     {
     id: 10,
@@ -127,9 +144,9 @@ export const products = [
     colors: ['#4F4631', '#314F4A', '#31344F'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
     images: [
-      '/src/assets/DI 1.png',
-      '/src/assets/DI 2.png',
-      '/src/assets/DI 3.png',
+      DI1,
+      DI2,
+      DI3,
     ],
   },
   {
@@ -141,7 +158,7 @@ export const products = [
     description: 'T-shirt with tape details for a trendy look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: ['/src/assets/t-shirt.png'],
+    images: [TSHIRT],
   },
   {
     id: 12,
@@ -152,7 +169,7 @@ export const products = [
     description: 'Faded skinny jeans for a stylish look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: ['/src/assets/l-jeans.png'],
+    images: [L_JEANS],
   },
   {
     id: 13,
@@ -165,6 +182,6 @@ export const products = [
     description: 'Polo shirt with contrast trims for a stylish look.',
     colors: ['#E0C097', '#A3B18A'],
     sizes: ['Small', 'Medium', 'Large', 'X-Large'],
-    images: ['/src/assets/AL 1.png'],
+    images: [AL1],
   },
 ];
