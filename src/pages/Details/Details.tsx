@@ -4,6 +4,10 @@ import { useParams } from 'react-router-dom';
 import { products } from '@/data/products';
 import { Star, StarHalf, CheckCircle2 } from 'lucide-react';
 import filter from '@/assets/D filter.png';
+import AL1 from '@/assets/AL 1.png';
+import AL2 from '@/assets/AL 2.png';
+import AL3 from '@/assets/AL 3.png';
+import AL4 from '@/assets/AL 4.png';
 import option from '@/assets/D option.png';
 
 
@@ -53,19 +57,19 @@ const alsoLike = [
     oldPrice: 242,
     discount: 20,
     rating: 4.0,
-    img: '/src/assets/AL 1.png',
+    img: AL1,
   },
   {
     name: 'Gradient Graphic T-shirt',
     price: 145,
     rating: 3.5,
-    img: '/src/assets/AL 2.png',
+    img: AL2,
   },
   {
     name: 'Polo with Tipping Details',
     price: 180,
     rating: 4.5,
-    img: '/src/assets/AL 3.png',
+    img: AL3,
   },
   {
     name: 'Black Striped T-shirt',
@@ -73,7 +77,7 @@ const alsoLike = [
     oldPrice: 150,
     discount: 30,
     rating: 3.0,
-    img: '/src/assets/AL 4.png',
+    img: AL4,
   },
 ];
 
