@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 48px 0 0 0;
 }
+
 .product-section-title {
   font-size: 48px;
   font-weight: 800;
@@ -10,12 +11,14 @@
   letter-spacing: 0%;
   line-height: 100%;
 }
+
 .product-section-product-list {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .product-section-product-card {
   background: #f0eeed;
   border-radius: 18px;
@@ -29,6 +32,7 @@
   overflow: hidden;
   height: 320px;
 }
+
 .product-section-product-card img {
   width: 100%;
   border-radius: 12px;
@@ -36,6 +40,7 @@
   object-fit: contain;
   max-height: 100%;
 }
+
 .product-section-product-name {
   font-weight: 700;
   margin-bottom: 0.2rem;
@@ -44,6 +49,7 @@
   line-height: 100%;
   letter-spacing: 0%;
 }
+
 .product-section-product-price {
   font-weight: 700;
   color: #000000;
@@ -51,6 +57,7 @@
   line-height: 100%;
   letter-spacing: 0%;
 }
+
 .product-view-all {
   display: block;
   margin: 2rem auto 0 auto;
@@ -63,9 +70,11 @@
   font-weight: 500;
   cursor: pointer;
 }
+
 .product-view-all:hover {
   background: #00000010;
 }
+
 .product-card-wrapper {
   display: flex;
   flex-direction: column;
@@ -84,6 +93,7 @@
   gap: 2px;
   margin: 0.7rem 0 0.2rem 0;
 }
+
 .product-section-main-price {
   text-decoration: line-through;
   color: #00000041;
@@ -94,6 +104,7 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
+
 .product-section-discount-badge {
   display: inline-block;
   background: #ff333310;
@@ -107,6 +118,7 @@
   margin-right: 0.5rem;
   vertical-align: middle;
 }
+
 .product-section-discounted-price {
   color: #000000;
   font-weight: 700;
@@ -115,30 +127,43 @@
   letter-spacing: 0%;
   vertical-align: middle;
 }
+
 @media (max-width: 900px) {
   .product-section-product-list {
     gap: 2rem;
   }
+
   .product-section-product-card {
     width: 300px;
     padding: 1rem 0.7rem;
   }
 }
+
 @media (max-width: 550px) {
   .product-section-product-list {
     flex-direction: column;
     align-items: center;
   }
+
   .product-section-product-card {
     width: 95vw;
     max-width: 340px;
     min-width: 220px;
   }
 }
+
 @media (max-width: 430px) {
   .product-section-product-card {
     width: 80vw;
     max-width: 320px;
     min-width: 280px;
+  }
+}
+
+@media (max-width: 300px) {
+  .product-section-product-card {
+    width: 50vw;
+    max-width: 230px;
+    min-width: 200px;
   }
 }

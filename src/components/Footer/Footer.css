@@ -201,3 +201,23 @@
     width: 70px;
   }
 }
+
+@media (max-width: 440px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    min-width: 0;
+    flex: 1 1 auto;
+    margin: auto;
+    align-items: center;
+  }
+  .footer-payments img {
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    height: 32px;
+    width: 50px;
+  }
+}

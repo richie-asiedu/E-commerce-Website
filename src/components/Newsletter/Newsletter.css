@@ -181,6 +181,13 @@
 }
 
 @media (max-width: 440px) {
+  .newsletter-section {
+    background: #000000;
+    width: 337px;
+    padding: 48px 0;
+    margin: auto !important;
+    border-radius: 20px;
+  }
   .newsletter-input-icon {
     position: absolute;
     left: 18px;
@@ -188,5 +195,43 @@
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .newsletter-section {
+    background: #000000;
+    width: 290px;
+    padding: 48px 0;
+    margin: auto !important;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 290px) {
+  .newsletter-content h3 {
+  font-size: 20px;
+  width: 180px;
+  margin-bottom: 1.5rem;
+}
+  .newsletter-section {
+    width: 290px;
+    padding: 40px 0;
+    margin: auto !important;
+    border-radius: 20px;
+  }
+  .newsletter-input-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .newsletter-form input[type="email"] {
+    width: 50%;
+    margin-top: 15%;
+  }
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .newsletter-form button{
+    width: 50%;
   }
 }

@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Search,  ChevronDown} from 'lucide-react'
 import { Link } from 'react-router-dom';
 import './Navbar.css'
@@ -48,39 +47,64 @@ const Navbar = () => {
         <Link to="/" className="navbar-logo-link">
           <img src={Logo} alt='logo' className="navbar-logo" />
         </Link>
-        <div className={`navbar-links${isMobileMenuOpen ? ' open' : ''}`}> 
-          <div className="navbar-dropdown">
-            <button
-              className="navbar-link flex items-center gap-1"
-              tabIndex={0}
-              aria-haspopup="true"
-              aria-expanded={isShopDropdownOpen}
-              onClick={() => setIsShopDropdownOpen((open) => !open)}
-              onBlur={() => setTimeout(() => setIsShopDropdownOpen(false), 150)}
-            >
-              Shop <ChevronDown className="w-4 h-4" />
-            </button>
-            {!isMobile && isShopDropdownOpen && (
-              <div className="navbar-dropdown-menu navbar-dropdown-absolute">
-                <a href="#" className="navbar-dropdown-item">All Products</a>
-                <a href="#" className="navbar-dropdown-item">Men</a>
-                <a href="#" className="navbar-dropdown-item">Women</a>
-                <a href="#" className="navbar-dropdown-item">Accessories</a>
-              </div>
-            )}
-          </div>
-          {isMobileMenuOpen && isMobile && isShopDropdownOpen && (
-            <div className="navbar-dropdown-menu">
-              <a href="#" className="navbar-dropdown-item">All Products</a>
-              <a href="#" className="navbar-dropdown-item">Men</a>
-              <a href="#" className="navbar-dropdown-item">Women</a>
-              <a href="#" className="navbar-dropdown-item">Accessories</a>
+        {!isMobile && (
+          <div className="navbar-links"> 
+            <div className="navbar-dropdown">
+              <button
+                className="navbar-link flex items-center gap-1"
+                tabIndex={0}
+                aria-haspopup="true"
+                aria-expanded={isShopDropdownOpen}
+                onClick={() => setIsShopDropdownOpen((open) => !open)}
+                onBlur={() => setTimeout(() => setIsShopDropdownOpen(false), 150)}
+              >
+                Shop <ChevronDown className="w-4 h-4" />
+              </button>
+              {isShopDropdownOpen && (
+                <div className="navbar-dropdown-menu navbar-dropdown-absolute">
+                  <a href="#" className="navbar-dropdown-item">All Products</a>
+                  <a href="#" className="navbar-dropdown-item">Men</a>
+                  <a href="#" className="navbar-dropdown-item">Women</a>
+                  <a href="#" className="navbar-dropdown-item">Accessories</a>
+                </div>
+              )}
             </div>
-          )}
-          <a href="#" className="navbar-link">On Sale</a>
-          <a href="#product-section" className="navbar-link">New Arrivals</a>
-          <a href="#brand-bar-carousel" className="navbar-link" >Brands</a>
-        </div>
+            <a href="#" className="navbar-link">On Sale</a>
+            <a href="#product-section" className="navbar-link">New Arrivals</a>
+            <a href="#brand-bar-carousel" className="navbar-link" >Brands</a>
+          </div>
+        )}
+        {isMobile && isMobileMenuOpen && (
+          <div className="navbar-sidebar-overlay" onClick={() => setIsMobileMenuOpen(false)}>
+            <aside className="navbar-sidebar" onClick={e => e.stopPropagation()}>
+              <button className="navbar-sidebar-close" onClick={() => setIsMobileMenuOpen(false)} aria-label="Close sidebar">&times;</button>
+              <nav className="navbar-sidebar-links">
+                <div className="navbar-dropdown">
+                  <button
+                    className="navbar-link flex items-center gap-1"
+                    tabIndex={0}
+                    aria-haspopup="true"
+                    aria-expanded={isShopDropdownOpen}
+                    onClick={() => setIsShopDropdownOpen((open) => !open)}
+                  >
+                    Shop <ChevronDown className="w-4 h-4" />
+                  </button>
+                  {isShopDropdownOpen && (
+                    <div className="navbar-dropdown-menu">
+                      <a href="#" className="navbar-dropdown-item">All Products</a>
+                      <a href="#" className="navbar-dropdown-item">Men</a>
+                      <a href="#" className="navbar-dropdown-item">Women</a>
+                      <a href="#" className="navbar-dropdown-item">Accessories</a>
+                    </div>
+                  )}
+                </div>
+                <a href="#" className="navbar-link">On Sale</a>
+                <a href="#product-section" className="navbar-link">New Arrivals</a>
+                <a href="#brand-bar-carousel" className="navbar-link" >Brands</a>
+              </nav>
+            </aside>
+          </div>
+        )}
         <div className="navbar-search-wrap">
           <div className="navbar-search">
             <button
@@ -137,7 +161,7 @@ const Navbar = () => {
           </Link>
         </div>
         {showMobileSearch && (
-          <div className="mobile-search-modal" onClick={() => setShowMobileSearch(false)}>
+        <div className="mobile-search-modal" onClick={() => { setShowMobileSearch(false); setSearchValue(""); }}>
             <div className="mobile-search-box" onClick={e => e.stopPropagation()}>
               <input
                 className="mobile-search-input"
@@ -165,11 +189,11 @@ const Navbar = () => {
                       </Link>
                     ))
                   ) : (
-                    <div className="navbar-search-no-result">No Product Found.</div>
+                    <div className="navbar-search-no-result">No Product Found...</div>
                   )}
                 </div>
               )}
-              <button className="mobile-search-close" onClick={() => setShowMobileSearch(false)}>
+          <button className="mobile-search-close" onClick={() => { setShowMobileSearch(false); setSearchValue(""); }}>
                 Close
               </button>
             </div>

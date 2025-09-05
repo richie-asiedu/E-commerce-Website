@@ -141,7 +141,6 @@ const Details = () => {
               }
             })}
             <span className="details-rating-value">{product.rating ? product.rating : 'N/A'}/5.0</span>
-            <span className="details-reviews-count">({product.reviews ? product.reviews : 0} reviews)</span>
           </div>
           <div className="details-price-row">
             <span className="details-price">${product.price}</span>
