@@ -133,7 +133,7 @@ export const products = [
   },
     {
     id: 10,
-    name: 'ONE LIFE GRAPHIC T-SHIRT',
+    name: 'One Life Graphic T-Shirt',
     price: 260,
     oldPrice: 300,
     discount: 40,

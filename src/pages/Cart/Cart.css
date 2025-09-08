@@ -702,7 +702,7 @@
   }
   .cart-item-name {
     font-size: 12px;
-    white-space: nowrap;
+    white-space: wrap;
     margin-left: 10%;
   }
   .cart-item-size,

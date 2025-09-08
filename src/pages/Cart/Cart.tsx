@@ -49,6 +49,8 @@ const Cart = () => {
                     '#314F4A': 'Teal',
                     '#E0C097': 'Beige',
                     '#A3B18A': 'Olive',
+                    '#4F4631': 'Dark Olive',
+                     '#31344F': 'Charcoal Blue',
                   };
                   return colorNames[item.color] || item.color;
                 })()}</div>
@@ -60,7 +62,7 @@ const Cart = () => {
                   title="Remove from cart"
                   onClick={() => removeFromCart(item.id, item.size, item.color)}
                 >
-                  <img src={RFC} alt="Remove" style={{width: 20, height: 20}} />
+                  <img src={RFC} alt="Remove" style={{ width: 20, height: 20 }} />
                 </button>
                 <div className="cart-item-qty-row">
                   <button
@@ -99,9 +101,9 @@ const Cart = () => {
             <span>Total</span>
             <span className="cart-summary-total">${total}</span>
           </div>
-          <div className="cart-summary-promo-row" style={{position: 'relative', display: 'flex', alignItems: 'center'}}>
-            <input type="text" placeholder="Add promo code" className="cart-promo-input" style={{paddingLeft: 36}} />
-            <img src={Prm} alt="Promo" style={{width: 18, height: 18, position: 'absolute', left: 15, top: '50%', transform: 'translateY(-30%)'}} />
+          <div className="cart-summary-promo-row" style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+            <input type="text" placeholder="Add promo code" className="cart-promo-input" style={{ paddingLeft: 36 }} />
+            <img src={Prm} alt="Promo" style={{ width: 18, height: 18, position: 'absolute', left: 15, top: '50%', transform: 'translateY(-30%)' }} />
             <button className="cart-promo-btn">Apply</button>
           </div>
           <button className="cart-checkout-btn">
