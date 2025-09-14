@@ -9,8 +9,8 @@
 }
 
 .profile-flip-card {
-  width: 370px;
-  height: 420px;
+  width: 650px;
+  height: 470px;
   perspective: 1200px;
   position: relative;
 }
@@ -30,8 +30,7 @@
   position: absolute;
   top: 0; left: 0;
   background: black;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
